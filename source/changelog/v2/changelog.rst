@@ -8,6 +8,10 @@ changes are documented here.
 
 April 2024
 ==========
+- Added support for `lines` parameter on the Payments API.
+
+April 2024
+==========
 - :doc:`Placing a hold on a payment </payments/place-a-hold-for-a-payment>` is now general available.
 
 March 2024
