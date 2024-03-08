@@ -271,17 +271,6 @@ Response
 
    An array of line objects. Each object will have the properties listed below.
 
-   .. parameter:: description
-      :type: string
-
-      A description of the line, for example *LEGO 4440 Forest Police Station*.
-
-   .. parameter:: sku
-      :type: string
-      :condition: optional
-
-      The SKU, EAN, ISBN or UPC of the product sold.
-
    .. parameter:: type
       :type: string
       :condition: optional
@@ -299,6 +288,11 @@ Response
 
       Possible values: ``meal`` ``eco`` ``gift``
 
+   .. parameter:: description
+      :type: string
+
+      A description of the line, for example *LEGO 4440 Forest Police Station*.
+
    .. parameter:: quantity
       :type: int
 
@@ -315,6 +309,17 @@ Response
 
       The price of a single item including VAT in the line.
 
+   .. parameter:: discountAmount
+      :type: amount object
+      :condition: optional
+
+      Any discounts applied to the line.
+
+   .. parameter:: totalAmount
+      :type: amount object
+
+      The total amount of the line, including VAT and discounts.
+
    .. parameter:: vatRate
       :type: string
       :condition: optional
@@ -328,16 +333,11 @@ Response
 
       The amount of value-added tax on the line.
 
-   .. parameter:: discountAmount
-      :type: amount object
+   .. parameter:: sku
+      :type: string
       :condition: optional
 
-      Any discounts applied to the line.
-
-   .. parameter:: totalAmount
-      :type: amount object
-
-      The total amount of the line, including VAT and discounts.
+      The SKU, EAN, ISBN or UPC of the product sold.
    
    .. parameter:: imageUrl
       :type: string
