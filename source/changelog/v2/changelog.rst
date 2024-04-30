@@ -6,11 +6,13 @@ Changelog
 Occasionally, we will add new resources, new fields, or new possible values to existing fields to the v2 Mollie API. All
 changes are documented here.
 
+May 2024
+========
+- Added support for `lines` parameter on the :doc:`/reference/v2/payments-api`.
+
 April 2024
 ==========
 - :doc:`Placing a hold on a payment </payments/place-a-hold-for-a-payment>` is now general available.
-- Added support for `lines` parameter on the Payments API.
-- Added support for `lines` parameter on the :doc:`/reference/v2/payments-api`.
 
 April 2024
 ==========
