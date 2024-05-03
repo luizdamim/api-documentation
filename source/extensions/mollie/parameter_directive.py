@@ -11,6 +11,7 @@ class ParameterDirective(Directive):
     option_spec = {
         "type": directives.unchanged_required,
         "condition": directives.unchanged,
+        "beta": utilities.validate_bool,
         "collapse": utilities.validate_bool,
         "collapse-children": utilities.validate_bool
     }
@@ -26,6 +27,9 @@ class ParameterDirective(Directive):
 
         if "condition" in self.options:
             self.add_condition_node(name_container, self.options["condition"])
+
+        if "beta" in self.options:
+            self.add_beta_node(name_container)
 
         collapse = "collapse" in self.options and self.options["collapse"] is True
 
@@ -70,6 +74,12 @@ class ParameterDirective(Directive):
             condition_node["classes"] += ["parameter__condition--conditional"]
 
         container += [condition_node]
+
+    def add_beta_node(self, container):
+        data_type_node = nodes.inline(text="beta")
+        data_type_node["classes"] = ["parameter__beta"]
+
+        container += [data_type_node]
 
     def add_collapse_toggle_node(self, container):
         collapse_button_node = nodes.raw(

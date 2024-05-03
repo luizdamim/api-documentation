@@ -108,6 +108,7 @@ Parameters
 .. parameter:: lines
    :type: array
    :condition: optional
+   :beta: true
 
    .. _order-lines-details:
 

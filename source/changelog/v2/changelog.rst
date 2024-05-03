@@ -8,8 +8,7 @@ changes are documented here.
 
 May 2024
 ========
-- Added `lines` parameter on the :doc:`/reference/v2/payments-api`. Lines will be displayed on the 
-:doc:`Hosted Checkout </payments/hosted-checkout>`.
+- Added ``lines`` parameter on the :doc:`/reference/v2/payments-api`.
 
 April 2024
 ==========
@@ -21,12 +20,12 @@ April 2024
 
 March 2024
 ==========
-- Added support for `sort` parameter on the List Payments and List Orders endpoints.
+- Added support for ``sort`` parameter on the List Payments and List Orders endpoints.
 - Edenred vouchers and Twint are generally available.
 
 January 2024
 =============
-- Added support for the `description` and `countriesOfActivity` fields on the Profiles API
+- Added support for the ``description`` and ``countriesOfActivity`` fields on the Profiles API
 
 December 2023
 =============
