@@ -8,7 +8,8 @@ changes are documented here.
 
 May 2024
 ========
-- Added support for `lines` parameter on the :doc:`/reference/v2/payments-api`.
+- Added `lines` parameter on the :doc:`/reference/v2/payments-api`. Lines will be displayed on the 
+:doc:`Hosted Checkout </payments/hosted-checkout>`.
 
 April 2024
 ==========
