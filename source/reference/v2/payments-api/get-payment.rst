@@ -280,14 +280,6 @@ Response
       Possible values: ``physical`` ``discount`` ``digital`` ``shipping_fee`` ``store_credit`` ``gift_card``
       ``surcharge``
 
-   .. parameter:: category
-      :type: string
-      :condition: optional
-
-      The category of product bought.
-
-      Possible values: ``meal`` ``eco`` ``gift``
-
    .. parameter:: description
       :type: string
 
