@@ -111,7 +111,9 @@ Parameters
 
    .. _order-lines-details:
 
-   The lines for the payment. Each line contains details such as a description of the item ordered, its price et cetera.
+   The lines for the payment. These will be displayed on the :doc:`hosted-checkout`.
+
+   Each line contains details such as a description of the item ordered, its price et cetera.
 
    All lines must have the same currency as the payment. You cannot mix currencies within a single payment.
 
@@ -123,20 +125,6 @@ Parameters
 
       Possible values: ``physical`` ``discount`` ``digital`` ``shipping_fee`` ``store_credit`` ``gift_card``
       ``surcharge``
-
-      For selling digitally delivered goods through PayPal, request PayPal to `enable this on your account
-      <https://developer.paypal.com/docs/classic/express-checkout/digital-goods/IntroducingExpressCheckoutDG/>`_.
-
-   .. parameter:: category
-      :type: string
-      :condition: optional
-
-      The category of product bought.
-
-      This parameter is optional. However, *one* of your order lines should contain it if you want to accept ``voucher``
-      payments.
-
-      Possible values: ``meal`` ``eco`` ``gift``
 
    .. parameter:: description
       :type: string
