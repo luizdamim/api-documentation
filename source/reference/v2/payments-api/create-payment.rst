@@ -112,9 +112,7 @@ Parameters
 
    .. _order-lines-details:
 
-   The lines for the payment. These will be displayed on the :doc:`hosted-checkout`.
-
-   Each line contains details such as a description of the item ordered, its price et cetera.
+   The lines for the payment. Each line contains details such as a description of the item ordered, its price et cetera.
 
    All lines must have the same currency as the payment. You cannot mix currencies within a single payment.
 

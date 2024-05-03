@@ -268,6 +268,7 @@ Response
 .. parameter:: lines
    :type: array
    :condition: optional
+   :beta: true
 
    An array of line objects. Each object will have the properties listed below.
 

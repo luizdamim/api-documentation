@@ -8,11 +8,10 @@ changes are documented here.
 
 May 2024
 ========
-- Added ``lines`` parameter on the :doc:`/reference/v2/payments-api`.
+We are introducing a new beta parameter to the Payments API that allows adding line item information.
 
-April 2024
-==========
-- :doc:`Placing a hold on a payment </payments/place-a-hold-for-a-payment>` is now general available.
+- Added ``lines`` parameter on the :doc:`/reference/v2/payments-api/create-payment` endpoint.
+- Added ``lines`` parameter on the :doc:`/reference/v2/payments-api/get-payment` endpoint.
 
 April 2024
 ==========
