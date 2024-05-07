@@ -45,7 +45,7 @@ start: install
 nginx: 
 	nginx -g 'daemon off;'
 
-install:
+install: node_modules/.bin/parcel
 	${DEV_PYTHON} -mpip install --user -r requirements.txt --no-warn-script-location
 
 lint-js:
