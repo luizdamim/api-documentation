@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := html
-.PHONY: help start install clean css-reload html html-only html-production html-reload js-reload lint-js verify Makefile
+.PHONY: help start install clean css-reload html html-only html-production html-reload js-reload lint-js verify Makefile nginx
 
 # Minimal makefile for Sphinx documentation
 #
@@ -31,16 +31,19 @@ source/_static/index.js: source/theme/js/index.js node_modules/.bin/parcel
 	node_modules/.bin/parcel build source/theme/js/index.js --out-dir source/_static --out-file index --no-source-maps --detailed-report
 
 css-reload:
-	@./node_modules/.bin/parcel source/theme/styles/main.scss --out-dir build/_static --out-file style --no-hmr --port 8001
+	@./node_modules/.bin/parcel source/theme/styles/main.scss --out-dir build/_static --out-file style --no-hmr --port 18001
 
 js-reload:
-	@./node_modules/.bin/parcel source/theme/js/index.js --out-dir build/_static --out-file index --no-hmr --port 8002
+	@./node_modules/.bin/parcel source/theme/js/index.js --out-dir build/_static --out-file index --no-hmr --port 18002
 
 html-reload:
 	${DEV_PYTHON} -msphinx_autobuild --ignore '*.*~' -b html "${SOURCE_DIR}" "${BUILD_DIR}" ${DEV_SPHINX_OPTS} ${O}
 
-start:
-	make html-reload & make css-reload & make js-reload
+start: install
+	make nginx & make html-reload & make css-reload & make js-reload
+
+nginx: 
+	nginx -g 'daemon off;'
 
 install:
 	${DEV_PYTHON} -mpip install --user -r requirements.txt --no-warn-script-location
