@@ -92,6 +92,9 @@ periodically through *subscriptions*.
 
 .. note:: Created mandates are unique to your account and can not be transferred to other accounts.
 
+.. note:: Card details are retained for 14 months following the most recent successful transaction. When a card is not
+          used for this period, it cannot be charged anymore.
+
 .. warning:: Using recurring payments with PayPal is only possible if PayPal has activated Reference Transactions on
              your merchant account. After this is done, please contact Mollie support to enable recurring payments
              via PayPal on your Mollie profile.
