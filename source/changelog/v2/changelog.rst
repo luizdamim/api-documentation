@@ -6,18 +6,25 @@ Changelog
 Occasionally, we will add new resources, new fields, or new possible values to existing fields to the v2 Mollie API. All
 changes are documented here.
 
+May 2024
+========
+We are introducing a new beta parameter to the Payments API that allows adding line item information.
+
+- Added ``lines`` parameter on the :doc:`/reference/v2/payments-api/create-payment` endpoint.
+- Added ``lines`` parameter on the :doc:`/reference/v2/payments-api/get-payment` endpoint.
+
 April 2024
 ==========
 - :doc:`Placing a hold on a payment </payments/place-a-hold-for-a-payment>` is now general available.
 
 March 2024
 ==========
-- Added support for `sort` parameter on the List Payments and List Orders endpoints.
+- Added support for ``sort`` parameter on the List Payments and List Orders endpoints.
 - Edenred vouchers and Twint are generally available.
 
 January 2024
 =============
-- Added support for the `description` and `countriesOfActivity` fields on the Profiles API
+- Added support for the ``description`` and ``countriesOfActivity`` fields on the Profiles API
 
 December 2023
 =============
