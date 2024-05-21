@@ -1,7 +1,7 @@
 Orders API
 ==========
 
-.. note:: It is recommended to use the :doc:`Payments API</reference/v2/payments-api>` instead of the Orders API. 
+.. note:: It is recommended to use the :doc:`Payments API </reference/v2/payments-api/overview>` instead of the Orders API. 
    We are actively working on adding support for Klarna, Billie, in3 and Vouchers to the Payments API later this year.
 
 The **Orders API** allows you to use Mollie for your order management.
