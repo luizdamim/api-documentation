@@ -134,6 +134,8 @@ Direct Debit
 
 Credit Card
 """""""""""
+Card details are retained for 14 months following the most recent successful transaction.
+
 .. parameter:: cardHolder
    :type: string
 
