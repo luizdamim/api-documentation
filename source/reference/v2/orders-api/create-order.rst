@@ -12,9 +12,8 @@ Create order
    :organization_access_tokens: true
    :oauth: true
 
-Using the :doc:`Orders API </orders/overview>` is the preferred approach when integrating the Mollie API into e-commerce
-applications such as webshops. If you want to use *Klarna*, *Klarna Pay now*, *Klarna Pay later*, *Klarna Slice it*, *in3* or
-*Vouchers*, using the Orders API is mandatory.
+.. note:: It is recommended to use the :doc:`Payments API </reference/v2/payments-api/overview>` instead of the Orders API. 
+   We are actively working on adding support for Klarna, Billie, in3 and Vouchers to the Payments API later this year.
 
 Creating an Order will automatically create the required Payment to allow your customer to pay for the order.
 

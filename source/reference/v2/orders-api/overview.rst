@@ -1,5 +1,8 @@
 Orders API
 ==========
+.. note:: It is recommended to use the :doc:`Payments API </reference/v2/payments-api/overview>` instead of the Orders API. 
+   We are actively working on adding support for Klarna, Billie, in3 and Vouchers to the Payments API later this year.
+
 The Orders API allows you to create *payment intents* with order management functionalities. The API is specifically
 designed for order-based payment processing. It can be seen as an extension of the
 :doc:`Payments API </reference/v2/payments-api/overview>` for more specific use cases.
