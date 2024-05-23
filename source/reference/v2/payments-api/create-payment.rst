@@ -570,6 +570,10 @@ iDEAL
    :type: string
    :condition: optional
 
+   .. note:: 
+      With the introduction of iDeal 2.0 this field will be deprecated. From 1 March 2025 this field will be ignored. 
+      For more details, see the `helpcenter article <https://help.mollie.com/hc/articles/19100313768338-iDEAL-2-0>`_.
+
    An iDEAL issuer ID, for example ``ideal_INGBNL2A``. This is useful when you want to embed the issuer selection on
    your own checkout screen. When supplying an issuer ID, the returned payment URL will deep-link to the specific
    banking website (ING Bank, in this example). The full list of issuers can be retrieved via the
