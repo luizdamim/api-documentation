@@ -33,7 +33,7 @@ Parameters
    The amount that you want to charge, e.g. ``{"currency":"EUR", "value":"1000.00"}`` if you would want to charge
    €1000.00.
 
-   Although its optional, a payment can not be made if no amount is provided.
+   Although optional, a payment can't be made if the amount object is not provided.
 
    .. parameter:: currency
       :type: string
