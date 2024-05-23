@@ -12,6 +12,7 @@ We are introducing a new beta parameter to the Payments API that allows adding l
 
 - Added ``lines`` parameter on the :doc:`/reference/v2/payments-api/create-payment` endpoint.
 - Added ``lines`` parameter on the :doc:`/reference/v2/payments-api/get-payment` endpoint.
+- Terminals API is now generally available
 
 April 2024
 ==========
