@@ -37,7 +37,10 @@ If you are using :doc:`organization access tokens </overview/authentication>` or
 
 Response
 --------
-``200`` ``application/hal+json``
+``200`` or ``202`` ``application/hal+json``
+
+When cancelling a payment that has a status ``authorized``, the response code will be ``202``. 
+In all other cases a ``200`` code wil be returned.
 
 A Payment object is returned, as described in :doc:`/reference/v2/payments-api/get-payment`.
 
