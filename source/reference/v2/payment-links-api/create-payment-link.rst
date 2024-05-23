@@ -37,22 +37,18 @@ Parameters
 
    .. parameter:: currency
       :type: string
-      :condition: optional
+      :condition: required
 
       An `ISO 4217 <https://en.wikipedia.org/wiki/ISO_4217>`_ currency code. The
       :doc:`currencies supported </payments/multicurrency>` depend on the payment methods that are enabled on your
       account.
 
-      The currency is required when a value is provided.
-
    .. parameter:: value
       :type: string
-      :condition: optional
+      :condition: required
 
       A string containing the exact amount you want to charge in the given currency. Make sure to send the right amount
       of decimals. Non-string values are not accepted.
-
-      The value is required when an amount is provided.
 
 .. parameter:: redirectUrl
    :type: string
