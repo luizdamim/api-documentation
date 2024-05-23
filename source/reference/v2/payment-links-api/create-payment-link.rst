@@ -49,10 +49,10 @@ Parameters
       :type: string
       :condition: optional
 
-      The value is required when an amount is provided.
-
       A string containing the exact amount you want to charge in the given currency. Make sure to send the right amount
       of decimals. Non-string values are not accepted.
+
+      The value is required when an amount is provided.
 
 .. parameter:: redirectUrl
    :type: string
