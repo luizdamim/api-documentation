@@ -11,7 +11,7 @@ wrong, why it went wrong and whether there is something you can do about it.
 
 A successful request
 --------------------
-An HTTP status ``200 OK``, ``201 Created`` or ``204 No Content``  is issued whenever your request was a success. You see
+An HTTP status ``200 OK``, ``201 Created``, ``202 Accepted`` or ``204 No Content``  is issued whenever your request was a success. You see
 this type of response in our examples like this one below where we successfully
 :doc:`retrieve a payment </reference/v2/payments-api/get-payment>`.
 
@@ -189,6 +189,8 @@ The Mollie API will only ever return a subset of all legal HTTP status codes. He
 |200|OK – Your request was successful.                                                                                 |
 +---+------------------------------------------------------------------------------------------------------------------+
 |201|Created – The entity was created successfully.                                                                    |
++---+------------------------------------------------------------------------------------------------------------------+
+|202|Accepted – The request was accepted for processing, but processing has not yet completed.                         |
 +---+------------------------------------------------------------------------------------------------------------------+
 |204|No Content – The requested entity was canceled / deleted successfully.                                            |
 +---+------------------------------------------------------------------------------------------------------------------+
