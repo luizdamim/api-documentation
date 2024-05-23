@@ -190,7 +190,7 @@ The Mollie API will only ever return a subset of all legal HTTP status codes. He
 +---+------------------------------------------------------------------------------------------------------------------+
 |201|Created – The entity was created successfully.                                                                    |
 +---+------------------------------------------------------------------------------------------------------------------+
-|202|Accepted – The request was accepted for processing, but processing has not yet completed.                                                                    |
+|202|Accepted – The request was accepted for processing, but processing has not yet completed.                         |
 +---+------------------------------------------------------------------------------------------------------------------+
 |204|No Content – The requested entity was canceled / deleted successfully.                                            |
 +---+------------------------------------------------------------------------------------------------------------------+
