@@ -3,8 +3,7 @@ Get payment method
 .. api-name:: Methods API
    :version: 1
 
-.. warning:: The v1 API has been deprecated. The v1 API will be supported for the foreseeable future, at least until
-             July 2023. However, new features will only be added to the v2 API.
+.. warning:: The v1 API has been deprecated and will be shut down 31 December 2024.
 
              The documentation for retrieving payment methods in the new v2 API can be found
              :doc:`here </reference/v2/methods-api/get-method>`. For more information on the v2 API, refer to our

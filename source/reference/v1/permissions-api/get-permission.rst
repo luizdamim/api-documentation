@@ -3,6 +3,12 @@ Get permission
 .. api-name:: Permissions API
    :version: 1
 
+.. warning:: The v1 API has been deprecated and will be shut down 31 December 2024.
+
+             The documentation for retrieving permissions in the new v2 API can be found
+             :doc:`here </reference/v2/permissions-api/get-permission>`. For more information on the v2 API, refer
+             to our :doc:`v2 migration guide </payments/migrating-v1-to-v2>`.
+
 .. endpoint::
    :method: GET
    :url: https://api.mollie.com/v1/permissions/*id*
