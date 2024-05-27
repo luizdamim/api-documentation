@@ -3,8 +3,7 @@ Get issuer
 .. api-name:: Issuers API
    :version: 1
 
-.. warning:: The v1 API has been deprecated. The v1 API will be supported for the foreseeable future, at least until
-             July 2023. However, new features will only be added to the v2 API.
+.. warning:: The v1 API has been deprecated and will be shut down 31 December 2024.
 
              The new v2 API no longer supports retrieving issuers separately. Instead, issuers can be retrieved by using
              the ``issuers`` include on the Methods API. Documentation for the Methods API v2 can be found

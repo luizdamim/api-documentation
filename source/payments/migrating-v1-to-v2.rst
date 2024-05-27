@@ -1,6 +1,8 @@
 Migrating from v1 to v2
 =======================
 
+.. warning:: The v1 API has been deprecated and will be shut down 31 December 2024.
+
 Why upgrade to v2?
 ------------------
 The **Mollie API v2** offers some compelling new features compared to the older ``v1`` API:
