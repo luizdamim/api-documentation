@@ -418,8 +418,8 @@ Bank transfer
    :condition: optional
 
    Consumer's email address, to automatically send the bank transfer details to. **Note:** the payment instructions will
-   will be sent immediately when creating the payment. If you do not specify the ``locale`` parameter, the email will be
-   sent in English, as we haven't yet been able to detect the consumer's browser language.
+   be sent immediately when creating the payment. If you do not specify the ``locale`` parameter, the email will be sent 
+   in English, as we haven't yet been able to detect the consumer's browser language.
 
 .. parameter:: dueDate
    :type: string
